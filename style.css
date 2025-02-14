@@ -1,0 +1,231 @@
+/* 🎨 Color Palette */
+:root {
+    --white: #FFFFFF;
+    --dark-blue: #004AAD;
+    --teal: #0097B2;
+    --light-blue: #38B6FF;
+    --text-color: #333;
+}
+
+/* 🌐 General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--white);
+    color: var(--text-color);
+}
+
+/* 🏡 Navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: var(--white);
+    border-bottom: 5px solid var(--light-blue);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.brand-name {
+    font-size: 1.8rem; /* Increases size */
+    font-weight: 700; /* Makes text bold */
+    color: var(--dark-blue); /* Changes text color to Dark Blue (#004AAD) */
+    margin-left: 10px;
+    text-transform: uppercase; /* Optional: Makes text uppercase */
+    font-family: 'Poppins', sans-serif; /* Ensures consistency */
+}
+
+/* Logo & Navigation */
+.logo-container {
+    display: flex;
+    align-items: center;
+    color: solid var(--dark-blue);
+}
+
+.logo {
+    height: 75px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex !important;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--dark-blue);
+    font-weight: 550;
+    font-size: 1.25rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--light-blue);
+}
+
+/* 🔘 Navigation Buttons */
+.nav-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.nav-buttons a {
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+/* "Contact Us" Button */
+.contact-btn {
+    background-color: var(--light-blue);
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    border: none;
+}
+
+.contact-btn:hover {
+    background-color: var(--teal);
+}
+
+/* 🎯 Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    text-align: center;
+    background: var(--white);
+    color: var(--dark-blue);
+    padding: 20px;
+    padding-top: 75px;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: var(--teal);
+}
+
+.hero .highlight {
+    color: var(--light-blue);
+    font-style: italic;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* 🎨 Hero Button */
+.hero .btn {
+    display: inline-block;
+    background-color: var(--light-blue);
+    color: var(--white);
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.hero .btn:hover {
+    background-color: var(--teal);
+    transform: scale(1.05);
+}
+
+/* 📌 Sections */
+.section {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: var(--white);
+    border-bottom: 2px solid var(--light-blue);
+}
+
+/* 🔍 Solution Cards */
+.solution-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card {
+    background: var(--white);
+    padding: 25px;
+    border-radius: 10px;
+    width: 320px;
+    color: var(--text-color);
+    border: 2px solid var(--teal);
+    transition: transform 0.3s ease;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background: var(--light-blue);
+    color: var(--white);
+}
+
+.card h3 {
+    color: var(--dark-blue);
+}
+
+/* 📩 Contact Section */
+#contact {
+    background: var(--white);
+    color: var(--text-color);
+    padding: 50px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid var(--light-blue);
+    font-size: 1rem;
+}
+
+.contact-form button {
+    background-color: var(--light-blue);
+    color: var(--white);
+    padding: 12px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: var(--teal);
+}
+
+/* 🏁 Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--dark-blue);
+    color: var(--white);
+}
